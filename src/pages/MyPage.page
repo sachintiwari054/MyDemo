@@ -1,0 +1,13 @@
+<apex:page controller="testController">
+<apex:form >
+<apex:pageBlock title="" mode="maindetail" id="block_nomerchants">
+<apex:pageBlockButtons location="top">
+    <apex:commandButton value="EditPending" styleClass="$blueButton buttonText$" rendered="{!(isModsApprover && showMOD)|| !allowTOCEdit}"/> &nbsp;
+    
+    <apex:commandButton value="EditnonPending" styleClass="$blueButton buttonText$" rendered="{!isModsApprover && showMOD}"/> &nbsp;
+    
+    </apex:pageBlockButtons>
+    
+    </apex:pageBlock>
+    </apex:form>    
+</apex:page>
